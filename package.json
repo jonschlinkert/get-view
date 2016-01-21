@@ -27,7 +27,16 @@
     "mocha": "*",
     "templates": "^0.10.7"
   },
-  "keywords": [],
+  "keywords": [
+    "assemble",
+    "collection",
+    "file",
+    "find",
+    "gulpfriendly",
+    "match",
+    "view",
+    "vinyl"
+  ],
   "verb": {
     "reflinks": [
       "assemble",
