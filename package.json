@@ -1,0 +1,54 @@
+{
+  "name": "get-view",
+  "description": "Utility for getting an assemble view from a collection object.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/get-view",
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/get-view",
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/get-view/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "match-file": "^0.1.0"
+  },
+  "devDependencies": {
+    "gulp-format-md": "^0.1.5",
+    "mocha": "*",
+    "templates": "^0.10.7"
+  },
+  "keywords": [],
+  "verb": {
+    "reflinks": [
+      "assemble",
+      "gulp",
+      "templates",
+      "verb",
+      "vinyl"
+    ],
+    "layout": "default",
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "related": {
+      "list": [
+        "assemble",
+        "gulp",
+        "match-file",
+        "templates",
+        "verb",
+        "vinyl"
+      ]
+    }
+  }
+}
