@@ -1,7 +1,7 @@
 {
   "name": "get-view",
   "description": "Utility for getting an assemble view from a collection object.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "homepage": "https://github.com/jonschlinkert/get-view",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/get-view",
