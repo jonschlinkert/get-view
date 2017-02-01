@@ -10,9 +10,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "LICENSE",
-    "README.md"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -22,13 +20,13 @@
     "test": "mocha"
   },
   "dependencies": {
-    "isobject": "^2.1.0",
-    "match-file": "^0.2.0"
+    "isobject": "^3.0.0",
+    "match-file": "^0.2.1"
   },
   "devDependencies": {
-    "gulp-format-md": "^0.1.9",
-    "mocha": "^2.5.3",
-    "templates": "^0.24.2"
+    "gulp-format-md": "^0.1.11",
+    "mocha": "^3.2.0",
+    "templates": "^1.1.1"
   },
   "keywords": [
     "assemble",
