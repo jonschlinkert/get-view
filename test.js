@@ -3,18 +3,18 @@
 require('mocha');
 var path = require('path');
 var assert = require('assert');
-var templates = require('templates');
+var Templates = require('templates');
 var getView = require('./');
 var app;
 
 describe('getView', function() {
   beforeEach(function() {
-    app = templates();
+    app = new Templates();
     app.create('page');
 
-    app.page('foo', {content: 'this is foo'});
-    app.page('bar.md', {content: 'this is bar'});
-    app.page('a/b/c/baz.md', {content: 'this is baz', base: 'a'});
+    app.page('foo', { content: 'this is foo' });
+    app.page('bar.md', { content: 'this is bar' });
+    app.page('a/b/c/baz.md', { content: 'this is baz', base: 'a' });
     app.page('test/fixtures/templates/a.tmpl');
   });
 

@@ -1,13 +1,12 @@
 /*!
  * get-view <https://github.com/jonschlinkert/get-view>
  *
- * Copyright (c) 2016-2017, Jon Schlinkert.
+ * Copyright (c) 2016-2018, Jon Schlinkert.
  * Released under the MIT License.
  */
 
 'use strict';
 
-var isObject = require('isobject');
 var isMatch = require('match-file');
 var path = require('path');
 
@@ -22,14 +21,16 @@ module.exports = function getFile(name, collection, fn) {
 
   for (var key in collection) {
     file = collection[key];
-    if (!isObject(file)) {
+    if (!isVinyl(file)) {
       throw new TypeError('expected file to be an object');
     }
-    if (typeof file.path !== 'string') {
-      throw new TypeError('expected file.path to be a string');
-    }
+    if (typeof file.path !== 'string') return;
     if (isMatch(name, file)) {
       return file;
     }
   }
 };
+
+function isVinyl(file) {
+  return file && typeof file === 'object' && file._isVinyl === true;
+}
