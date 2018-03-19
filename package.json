@@ -14,18 +14,17 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=6"
   },
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "match-file": "^1.0.0"
+    "path-ends-with": "^2.0.0"
   },
   "devDependencies": {
     "gulp-format-md": "^1.0.0",
-    "mocha": "^3.5.3",
-    "templates": "^1.2.9"
+    "mocha": "^3.5.3"
   },
   "keywords": [
     "assemble",
@@ -39,14 +38,11 @@
     "vinyl"
   ],
   "verb": {
-    "reflinks": [
-      "assemble",
-      "gulp",
-      "templates",
-      "verb",
-      "vinyl"
-    ],
+    "toc": false,
     "layout": "default",
+    "tasks": [
+      "readme"
+    ],
     "plugins": [
       "gulp-format-md"
     ],
@@ -60,6 +56,8 @@
         "vinyl"
       ]
     },
-    "toc": false
+    "lint": {
+      "reflinks": true
+    }
   }
 }
